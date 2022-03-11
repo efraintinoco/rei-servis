@@ -41,26 +41,43 @@ h1{
 }
 
 main{
-    display: grid; grid-template-columns: auto auto auto; grid-template-rows: auto auto;
-    background-color: hsl(158, 45%, 22%); height: 500px;
-    color:  hsl(40, 20%, 97%);
+    display: grid; grid-template-columns: 2; grid-template-rows: 250px 250px;
+    background-color: hsl(40, 20%, 97%); height: 500px;
+    color:  hsl(156, 45%, 22%)
 }
 
 .company {
     grid-column: 1 / 2;
     grid-row: 1/2;
-    padding: 150px;
-    text-align: center;
+    align-self: center;
+    align-items: center;
+    display: flex; 
+    flex-flow: column;
+   
+
+    
+    
 }
 
 .customerimage{
     grid-column: 2/3; 
     grid-row: 1/2;
-    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 50px;
+   
+    
 }
 
 img {
-   max-width: 100%; padding-top: 50px;
+   max-width: 100%; 
     
+}
+
+p{
+    padding: 50px;
+    text-align: center;
+    background-color:hsl(156, 45%, 22%) ;
+    color: hsl(40, 20%, 97%) ;
 }
 
