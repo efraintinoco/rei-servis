@@ -1,4 +1,6 @@
-
+body {
+    padding: 1em;
+}
 header {
     display: flex; 
     justify-content: space-between;
@@ -46,11 +48,12 @@ h1{
 }
 
 main{
-    display: grid; grid-template-columns: 2; grid-template-rows: 250px 250px;
+    display: grid; grid-template-columns: 640px 640px; grid-template-rows:3;
     background-color: hsl(40, 20%, 97%); height: 500px;
     color:  hsl(156, 45%, 22%) ;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
     padding-left: 50px;
+    width: 100%;
    
     
     
@@ -59,7 +62,7 @@ main{
 .company {
     grid-column: 1 / 2;
     grid-row: 1/2;
-    align-self: center;
+    justify-content: center;
     align-items: center;
     display: flex; 
     flex-flow: column;
@@ -80,15 +83,16 @@ main{
 }
 
 
-
 p{
     padding-top: 50px;
     padding-bottom: 50px;
-    text-align: center;
+    justify-content: center;
     background-color:hsl(156, 45%, 22%) ;
     color: hsl(40, 20%, 97%) ;
     margin-top: 60px;
     width: 100%;
+    display: flex;
+    align-items: center;
     
 }
 
@@ -105,7 +109,11 @@ footer {
 .photo-text{
     grid-row: 1/2;
     grid-column: 1/2;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
 
 }
 
@@ -114,6 +122,9 @@ footer {
 .copyright {
     grid-column: 1/2;
     grid-row: 2/3;
+    display: flex;
+    padding-left: 2em;
+    padding-bottom: 1em;
 }
 
 .social-media{
@@ -121,6 +132,7 @@ footer {
     grid-row: 2/3;
     display: flex;
     justify-content: flex-end;
+    padding-right: 2em;
      
 }
 
@@ -143,7 +155,7 @@ footer {
 
 .bottom-menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
 
