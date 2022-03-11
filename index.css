@@ -5,7 +5,9 @@ header {
     background-color: hsl(0, 0%, 16%);
     padding-left: 30px; 
     padding-right: 30px;
+    
 }
+
 header ul {
     display: flex;
     flex-flow: row nowrap;
@@ -59,7 +61,7 @@ main{
     
 }
 
-.customerimage{
+.customerphoto{
     grid-column: 2/3; 
     grid-row: 1/2;
     justify-content: center;
@@ -80,4 +82,38 @@ p{
     background-color:hsl(156, 45%, 22%) ;
     color: hsl(40, 20%, 97%) ;
 }
+
+footer {
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 3;
+    background-color: hsl(0, 0%, 16%);
+    color: hsl(40, 20%, 97%) ;
+}
+
+.photo-text{
+    grid-row: 1/2;
+    grid-column: 1/2;
+
+}
+
+.bottom-menu{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    display: grid;
+    grid-column: 5;
+    grid-template-rows: 2;
+}
+
+.copyright {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.social-media{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+
 
