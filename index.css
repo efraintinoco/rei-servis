@@ -52,4 +52,9 @@ main{
 .customerimage{
     grid-column: 2/3; 
     grid-row: 1/2;
+    
+
+}
+image { width: 10px;
+
 }
