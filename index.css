@@ -22,10 +22,7 @@ button {
     border-radius: 3px;
     
 }
- {
-    transform: scale(0.8);
-  }
-
+ 
 :any-link:hover {
     color:  hsl(40, 20%, 97%);
   }
@@ -39,4 +36,20 @@ a {
 h1{
     color:hsl(40, 20%, 97%) ;
 
+}
+
+main{
+    display: grid; grid-template-columns: 3; grid-template-rows: 2;
+    background-color: hsl(158, 45%, 22%); height: 80vh;
+    color:  hsl(40, 20%, 97%);
+}
+
+.company {
+    grid-column: 1 / 2;
+    grid-row: 1/2;
+    padding: 50px;
+}
+.customerimage{
+    grid-column: 2/3; 
+    grid-row: 1/2;
 }
