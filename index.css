@@ -1,5 +1,8 @@
 body {
     padding: 1em;
+    max-width: 100%;
+    
+    
 }
 header {
     display: flex; 
@@ -11,12 +14,27 @@ header {
     font-family: Graphik,Helvetica Neue,sans-serif;
     font-size: 16px;
     line-height: 20px;
+   
  }
+ @media (max-width:800px){
+     header {
+         display:flex;
+         flex-flow: column;
+         padding-bottom: 50px;
+    }
+ }
+
 
 header ul {
     display: flex;
     flex-flow: row nowrap;
     list-style: none;
+}
+@media (max-width:800px){
+    header ul   {
+        display:flex;
+        flex-flow: column nowrap;
+   }
 }
 
 header li {
@@ -48,14 +66,13 @@ h1{
 }
 
 main{
-    display: grid; grid-template-columns: 640px 640px; grid-template-rows:3;
+    display: grid; grid-template-columns: 2; grid-template-rows:3;
     background-color: hsl(40, 20%, 97%); height: 500px;
     color:  hsl(156, 45%, 22%) ;
     padding-bottom: 200px;
     padding-left: 50px;
-    width: 100%;
-   
-    
+    max-width: fit-content;
+     
     
 }
 
@@ -66,12 +83,14 @@ main{
     align-items: center;
     display: flex; 
     flex-flow: column;
-    
-  
-   
+ }
 
-    
-    
+ @media (max-width:800px){
+    .company{
+        display: block;
+        align-items: center;
+        text-align: center;
+   }
 }
 
 .customerphoto{
@@ -81,9 +100,17 @@ main{
     display: flex;
     margin: 50px;
 }
+@media (max-width:800px){
+    .customerphoto{
+        display: block;
+        align-items: center;
+        text-align: center;
+   }
+}
 
 
 p{
+     
     padding-top: 50px;
     padding-bottom: 50px;
     justify-content: center;
@@ -94,6 +121,14 @@ p{
     display: flex;
     align-items: center;
     
+    
+}
+@media (max-width:800px){
+    p{
+        display: block;
+        align-items: center;
+        text-align: center;
+   }
 }
 
 footer {
@@ -104,6 +139,12 @@ footer {
     color: hsl(40, 20%, 97%) ;font-family: Graphik,Helvetica Neue,sans-serif;
     font-size: 16px;
     line-height: 20px;
+}
+@media (max-width:800px){
+    footer {
+        display:flex;
+        flex-flow: column;
+   }
 }
 
 .photo-text{
@@ -116,6 +157,7 @@ footer {
    
 
 }
+
 
 
 
@@ -135,7 +177,15 @@ footer {
     padding-right: 2em;
      
 }
-
+@media (max-width:800px){
+    .social-media {
+        display:flex;
+        flex-flow: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+   }
+}
 .product{
     grid-column: 1/2;
     grid-row: 1/2;
@@ -157,9 +207,15 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
-
-    
+}
+@media (max-width:800px){
+    .bottom-menu {
+        display:flex;
+        flex-flow: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+   }
 }
 
 footer ul li{
@@ -182,7 +238,28 @@ footer ul li{
      
     
 }
+@media (max-width:800px){
+    main, p {
+        display:block;
+        flex-flow: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        font-size: small;
+   }
+}
 .locationphoto img {
     width: 25%; 
 }
- 
+@media (max-width:800px){
+    .locationphoto img {
+        width: 25%;
+   }
+}
+@media (max-width:800px){
+    .success{
+        display: block;
+        text-align: left;
+        padding-top: 50%;
+   }
+}
