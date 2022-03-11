@@ -3,6 +3,8 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: hsl(0, 0%, 16%);
+    padding-left: 30px; 
+    padding-right: 30px;
 }
 header ul {
     display: flex;
@@ -39,22 +41,26 @@ h1{
 }
 
 main{
-    display: grid; grid-template-columns: 3; grid-template-rows: 2;
-    background-color: hsl(158, 45%, 22%); height: 80vh;
+    display: grid; grid-template-columns: auto auto auto; grid-template-rows: auto auto;
+    background-color: hsl(158, 45%, 22%); height: 500px;
     color:  hsl(40, 20%, 97%);
 }
 
 .company {
     grid-column: 1 / 2;
     grid-row: 1/2;
-    padding: 50px;
+    padding: 150px;
+    text-align: center;
 }
+
 .customerimage{
     grid-column: 2/3; 
     grid-row: 1/2;
+    align-items: center;
+}
+
+img {
+   max-width: 100%; padding-top: 50px;
     
-
 }
-image { width: 10px;
 
-}
