@@ -51,14 +51,16 @@ button {
     border-radius: 3px;
     
 }
+
+
+
  
-:any-link:hover {
+:any-link:hover  {
     color:  hsl(40, 20%, 97%);
   }
 
-a {
+  a {
     text-decoration: none;
-    color: inherit;
     font-weight: 700;
     color:hsl(0, 0%, 65%);
 }
@@ -205,7 +207,7 @@ footer {
     display: flex;
     justify-content: flex-end;
     padding-right: 2em;
-     
+         
 }
 @media (max-width:800px){
     .social-media {
@@ -231,6 +233,8 @@ footer {
     grid-column: 4/5;
     grid-row: 1/2;
 }
+
+
 
 .bottom-menu {
     display: flex;
@@ -296,3 +300,4 @@ footer ul li{
         
    }
 }
+
