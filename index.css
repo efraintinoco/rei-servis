@@ -71,8 +71,9 @@ button {
 
  
 :any-link:hover  {
-    color:  hsl(40, 20%, 97%);
-  }
+    color: hsl(40, 20%, 97%);
+     
+}
 
   a {
     text-decoration: none;
@@ -338,5 +339,33 @@ footer ul li{
         margin-right: auto;
         
    }
+}
+.register>li>a{
+    color: hsl(0, 0%, 16%);
+    background-color: hsl(40, 20%, 97%);
+    border: white 5px;
+    display: inline-block;
+    height: 2em;
+    width: 5em;
+    margin-top: 1em;
+    text-align: center;
+}
+@media (max-width:900px){
+    .register>li>a{
+    color: hsl(0, 0%, 16%);
+    background-color: hsl(40, 20%, 97%);
+    border: white;
+    display: inline-block;
+    height: 2em;
+    width: 5em;
+    margin-top: 1em;
+    text-align: center;
+    
+        
+   }
+}
+
+.register :any-link:hover {
+   color:hsl(0, 0%, 65%);
 }
 
