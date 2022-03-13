@@ -24,7 +24,23 @@ header {
     }
  }
 
+.menubutton a{
+    color: hsl(0, 0%, 16%);
+    background-color: hsl(40, 20%, 97%);
+    border: white;
+    display: inline-block;
+    height: 2em;
+    width: 5em;
+    text-align: center;
+    padding-top: 7px;
+    padding-right: 3px;
+    padding-left: 3px;
+}
 
+.menubutton :any-link:hover {
+    color:hsl(156, 45%, 22%) ;
+    
+}
 
 
 header ul {
@@ -280,17 +296,21 @@ footer {
     .bottom-menu {
     display: flex;
     justify-content: space-evenly;
-    text-align: center; 
+    align-content: center;
     flex-wrap: wrap;
     padding-bottom: 17px;
     line-height: 1.8rem;
-    padding-right: 2em;
+    padding-right:1em;
+    text-align: center;
+    
+   
     }
 }
 
 
 footer ul li{
     list-style: none;
+   
 }
 
 
@@ -349,23 +369,21 @@ footer ul li{
     width: 5em;
     margin-top: 1em;
     text-align: center;
+    
 }
 @media (max-width:900px){
     .register>li>a{
     color: hsl(0, 0%, 16%);
     background-color: hsl(40, 20%, 97%);
-    border: white;
-    display: inline-block;
-    height: 2em;
-    width: 5em;
-    margin-top: 1em;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    
     
         
    }
 }
 
 .register :any-link:hover {
-   color:hsl(0, 0%, 65%);
+   color:  hsl(156, 45%, 22%) ;
 }
 
